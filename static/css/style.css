@@ -1,0 +1,43 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.toggle-form,
+.delete-form {
+  display: inline;
+}
+
+.form-check {
+  display: flex;
+  align-items: flex-start;
+}
+
+.form-check-input {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.btn-outline-primary,
+.btn-outline-danger {
+  border-radius: 20px;
+}
+
+.card-header {
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+}

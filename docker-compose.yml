@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=mongodb+srv://abhishek98as:12345@cluster0.0zpxbbm.mongodb.net/todo_app?retryWrites=true&w=majority&appName=Cluster0
+      - SECRET_KEY=dev_secret_key
+    volumes:
+      - .:/app
+    command: flask run --host=0.0.0.0
